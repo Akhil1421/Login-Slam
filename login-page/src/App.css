@@ -1,0 +1,89 @@
+.App{
+  background-color: #fcf9f3;
+   height: 100vh;
+   font-family: 'Inter';
+}
+.inner-app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.form{
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-width: 30vw;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  min-height: 60vh;
+}
+.form>div>input{
+  width: 100%;
+  margin-top: 2vh;
+  height: 40%;
+  text-indent: 4%;
+  border-radius: 0.25rem;
+}
+button{
+  padding: 2px 8px;
+}
+button{
+  background-color: #fd850e;
+  border: #fd850e 2px solid;
+  border-radius: 2rem;
+  height: 50%;
+  width: 30%;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: 'Inter';
+}
+button:hover{
+  color: white;
+  background-color: #f27900;
+  border-color: #f27900;
+}
+.btn-div{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+a{
+  text-decoration: none;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation: slideUp 2s ease-in-out;
+}
+
+.form2{
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-width: 30vw;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  min-height: 60vh;
+  max-height: 80vh; 
+}
+.form2>div>input{
+  width: 100%;
+  margin-top: 2vh;
+  height: 40%;
+  text-indent: 4%;
+  border-radius: 0.25rem; 
+}
+.form2>div>button{
+  height: 70%;
+  width: 25%; 
+}
