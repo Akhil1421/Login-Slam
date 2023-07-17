@@ -2,7 +2,7 @@ import React,{useRef} from 'react'
 import {Link} from "react-router-dom"
 import axios from "axios"
 
-const Login = () => {
+const Login = ({setCalled}) => {
     let userName = useRef('')
     let password = useRef('')
     let handleClick = async()=>{
@@ -10,11 +10,13 @@ const Login = () => {
             username : userName.current.value,
             password : password.current.value
         }
+        setCalled(true)
         try {
             let response = await axios.post("https://api.slamapp.co/auth/login",data,{withCredentials : true})
             console.log(response)
             window.location.href = "http://portal.slamapp.co/"
         } catch (error) {
+            setCalled(false)
             alert(error.response?.data ? [Object.keys(error.response.data),Object.values(error.response.data)] : error.message)
         }        
     }

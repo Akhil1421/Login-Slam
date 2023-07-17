@@ -76,6 +76,9 @@ a{
   min-height: 60vh;
   max-height: 80vh; 
 }
+.form2>div{
+  width: 100%;
+}
 .form2>div>input{
   width: 100%;
   margin-top: 2vh;
@@ -86,4 +89,31 @@ a{
 .form2>div>button{
   height: 70%;
   width: 25%; 
+}
+.flag-dropdown{
+  /* height: 40%; */
+  width:10%;
+  height: 70%;
+  border: 2px solid #000000;
+}
+.react-tel-input{
+  padding-left: 0px;
+}
+input.form-control{
+  /* height: 40%; */
+  width: 90%;
+  background-color: #f27900;
+  padding-left: 0px;
+}
+
+.absolute{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  background-color: #fcfcfc;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
