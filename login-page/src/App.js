@@ -10,9 +10,11 @@ function App() {
   useEffect(()=>{
     const getInfo = async()=>{
         try {
+          setCalled(true)
           let response = await axios.get("https://api.slamapp.co/profile/account",{withCredentials:true})
-          // window.location.href = "http://portal.slamapp.co"
+          window.location.href = "http://portal.slamapp.co"
         } catch (error) {
+          setCalled(false)
            console.log(error)
         }
     }
