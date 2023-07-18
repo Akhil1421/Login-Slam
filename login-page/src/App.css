@@ -117,3 +117,7 @@ input.form-control{
   justify-content: center;
   align-items: center; 
 }
+
+.ant-spin .ant-spin-dot-item{
+  background-color: #fd850e;
+}
